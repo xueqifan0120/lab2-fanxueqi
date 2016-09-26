@@ -101,7 +101,7 @@ p#col02 {
     }
     p#col02{
         width:50%;
-        float:right;
+        float:left;
     }
 }
 
@@ -145,10 +145,15 @@ p#col02 {
     p#col01{
         width:50%;
         float: left;
+        margin:0;
+        padding: 100px;
+        
     }
     p#col02{
         width:50%;
         float:left;
+        margin:0;
+        padding: 100px;
     }
 }
 
