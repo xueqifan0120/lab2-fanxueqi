@@ -11,16 +11,58 @@
 
 * { 
     box-sizing: border-box;
-	width: 100%;
 }
 
 header span.img {
     display: block;
+    padding: 15px;
+    margin: 10px;
+}
+
+div#logo{
+    background-color:lightblue;
+    text-align: center;
 }
 
 ul {
     list-style-type: none;
+    background-color: grey;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
 }
+
+li{
+    padding: 15px;
+    margin: 10px;
+    
+}
+
+p#Footer{
+    background-color: lightblue;
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+
+p#col01 {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    background: lightpink;
+    
+}
+
+p#col02 {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    background: lightpink;
+    
+}
+
 
 
 /**
@@ -31,6 +73,7 @@ ul {
  * Note: there is no "upper limit" in this breakpoint, so any styles in other
  * following breakpoints after this could override this one.
  */
+
 
 @media screen and (min-width: 480px) {
 
@@ -48,12 +91,18 @@ ul {
         visibility: hidden;
     }
 
-    section article {
+    /*section article {
+        float: left;
+    }*/
+     /* Re-style here... */
+    p#col01{
+        width:50%;
         float: left;
     }
-
-    /* Re-style here... */
-    
+    p#col02{
+        width:50%;
+        float:right;
+    }
 }
 
 
@@ -68,5 +117,39 @@ ul {
 @media screen and (min-width: 1280px) {
     /* Re-style here, if necessary! You may want to use the same technique
 	 * used in section::after for the header*/
-
+    
+    div#logo {
+        background-color:lightblue;
+        text-align: center;
+        float:left;
+        width:25%;
+    }
+    
+    ul {
+        list-style-type: none;
+        background-color: grey;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        width:75%;
+        float:right;
+    }
+    
+    li{
+        width:25%;
+        background-color: grey;
+        text-align: center;
+        float: left;
+    }
+    
+    p#col01{
+        width:50%;
+        float: left;
+    }
+    p#col02{
+        width:50%;
+        float:left;
+    }
 }
+
+
